@@ -5,18 +5,15 @@
 <polymer-element name="world-cup" attributes="year">
 
     <template>
-        <img src="src/{{validYear}}.jpg" alt="World Cup {{validYear}} Champion">
-
         <style>
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                margin: auto;
-                min-width: 50%;
-                min-height: 50%;
+            :host {
+                background-attachment: fixed;
+                background-position: 50% 50%;
+                background-repeat: no-repeat no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
             }
         </style>
     </template>
@@ -28,12 +25,10 @@
         ];
 
         Polymer('world-cup', {
-            validYear: '2010',
             yearChanged: function() {
                 for (var i = 0; i < supportedYears.length; i++) {
                     if (this.year === supportedYears[i]) {
-                        this.validYear = this.year;
-                        console.log(this.validYear);
+                        this.style.backgroundImage = 'url(src/' + this.year + '.jpg)';
                     }
                 }
             }
