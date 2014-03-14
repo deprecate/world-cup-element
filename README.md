@@ -1,6 +1,6 @@
 # &lt;world-cup&gt;
 
-Web Component to display [World Cup](http://www.fifa.com/worldcup/) winners using [Polymer](http://www.polymer-project.org/).
+Web Component to display [World Cup](http://www.fifa.com/worldcup/) winners presented on [JSConf Uruguay 2014](http://jsconf.uy/).
 
 ## Demo
 
