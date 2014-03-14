@@ -1,8 +1,6 @@
 # &lt;world-cup&gt;
 
-Web Component to display World Cup winners
-
-> Maintained by [Your Name](https://github.com/yourname).
+Web Component to display [World Cup](http://www.fifa.com/worldcup/) winners using [Polymer](http://www.polymer-project.org/).
 
 ## Demo
 
@@ -55,13 +53,13 @@ In order to run it locally you'll need a basic server setup.
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`year`     | *string*                  | `1950`, `1954`, `1958`, `1962`, `1966`, `1970`, `1974`, `1978`, `1982`, `1986`, `1990`, `1994`, `1998`, `2002`, `2006`, `2010`, `2014`               | World Cup Edition
+`year`     | `1950`, `1954`, `1958`, `1962`, `1966`, `1970`, `1974`, `1978`, `1982`, `1986`, `1990`, `1994`, `1998`, `2002`, `2006`, `2010`, `2014`                  | `2010`               | World Cup Edition
 
 ## Contributing
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -m `Add some feature'`
+3. Commit your changes: `git commit -m "Add some feature"`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
