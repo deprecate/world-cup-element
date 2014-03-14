@@ -1,0 +1,19 @@
+{
+    "name": "world-cup-element",
+    "version": "0.1.0",
+    "description": "Web Component to display World Cup winners",
+    "author": "Zeno Rocha",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zenorocha/world-cup-element"
+    },
+    "bugs": {
+        "url": "https://github.com/zenorocha/world-cup-element/issues"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-connect": "~0.5.0",
+        "grunt-cli": "~0.1.9"
+    }
+}

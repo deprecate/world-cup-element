@@ -1,0 +1,43 @@
+<!-- Import Polymer -->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!-- Define your custom element -->
+<polymer-element name="world-cup" attributes="year">
+
+    <template>
+        <img src="src/{{validYear}}.jpg" alt="World Cup {{validYear}} Champion">
+
+        <style>
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                min-width: 50%;
+                min-height: 50%;
+            }
+        </style>
+    </template>
+
+    <script>
+        supportedYears = [
+            '1950', '1954', '1958', '1962', '1966', '1970', '1974', '1978',
+            '1982', '1986', '1990', '1994', '1998', '2002', '2006', '2010', '2014'
+        ];
+
+        Polymer('world-cup', {
+            validYear: '2010',
+            yearChanged: function() {
+                for (var i = 0; i < supportedYears.length; i++) {
+                    if (this.year === supportedYears[i]) {
+                        this.validYear = this.year;
+                        console.log(this.validYear);
+                    }
+                }
+            }
+        });
+    </script>
+
+</polymer-element>

@@ -1,0 +1,22 @@
+{
+    "name": "world-cup-element",
+    "version": "0.1.0",
+    "description": "Web Component to display World Cup winners",
+    "authors": [
+        "Zeno Rocha"
+    ],
+    "license": "MIT",
+    "main": "src/world-cup.html",
+    "keywords": [
+        "web-components"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "platform": "Polymer/platform#~0.2.0",
+        "polymer": "Polymer/polymer#~0.2.0"
+    }
+}
