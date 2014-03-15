@@ -16,6 +16,7 @@
     <world-cup year="2010"></world-cup>
 
     <input list="years" type="text" value="2010" oninput="document.querySelector('world-cup').year = this.value">
+
     <datalist id="years"></datalist>
 
     <style>
@@ -37,18 +38,36 @@
             background: rgba(255, 255, 255, .7);
             border-radius: 6px;
             border: 2px solid #f2f2f2;
-            bottom: 50px;
+            top: 50px;
             color: #34495e;
             font-size: 32px;
             height: 42px;
             left: 50%;
-            margin-left: -100px;
+            margin-left: -125px;
             padding: 8px 12px;
             position: absolute;
             text-align: center;
             width: 200px;
+            padding-left: 50px;
         }
     </style>
+
+    <script>
+        (function () {
+            var supportedYears = [
+                '1950', '1954', '1958', '1962', '1966', '1970', '1974', '1978',
+                '1982', '1986', '1990', '1994', '1998', '2002', '2006', '2010', '2014'
+            ];
+
+            var options = '';
+
+            for (var i = 0; i < supportedYears.length; i++) {
+                options += '<option value="' + supportedYears[i] + '">';
+            }
+
+            document.getElementById('years').innerHTML = options;
+        })();
+    </script>
 
 </body>
 </html>

@@ -14,9 +14,9 @@
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
-                -webkit-transition: background-image 0.5s linear;
-                -moz-transition: background-image 0.5s linear;
-                transition: background-image 0.5s linear;
+                -webkit-transition: background-image 0.3s ease-out;
+                -moz-transition: background-image 0.3s ease-out;
+                transition: background-image 0.3s ease-out;
             }
         </style>
     </template>
@@ -34,14 +34,7 @@
                         this.style.backgroundImage = 'url(src/' + this.year + '.jpg)';
                     }
                 }
-            },
-            yearSuggestion: function() {
-                var options = '';
-                for (var i = 0; i < supportedYears.length; i++) {
-                    options += '<option value="'+supportedYears[i]+'" />';
-                }
-                document.getElementById('years').innerHTML = options;
-            }()
+            }
         });
     </script>
 
