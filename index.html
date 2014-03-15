@@ -15,7 +15,8 @@
     <!-- Using Custom Elements -->
     <world-cup year="2010"></world-cup>
 
-    <input type="text" value="2010" oninput="document.querySelector('world-cup').year = this.value">
+    <input list="years" type="text" value="2010" oninput="document.querySelector('world-cup').year = this.value">
+    <datalist id="years"></datalist>
 
     <style>
         body {
