@@ -31,7 +31,14 @@
                         this.style.backgroundImage = 'url(src/' + this.year + '.jpg)';
                     }
                 }
-            }
+            },
+            yearSuggestion: function() {
+                var options = '';
+                for (var i = 0; i < supportedYears.length; i++) {
+                    options += '<option value="'+supportedYears[i]+'" />';
+                }
+                document.getElementById('years').innerHTML = options;
+            }()
         });
     </script>
 
